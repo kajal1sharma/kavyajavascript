@@ -63,7 +63,7 @@ let str ="";
 for(let i=0;i<row;i++){
     //hash
     for(let j=row-1;j>i ;j--){ //4 3 2
-        str= str+"  ";
+        str= str+" ";
     }
     //str="# # # # * \n# # #"
     for(let j=0 ;j<=i;j++){
