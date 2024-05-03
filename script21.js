@@ -11,8 +11,21 @@ window.addEventListener('load',()=>{
             let text = result.todos[i].todo;
              console.log(text)
             let li = document.createElement('li')
+            let span = document.createElement('span')
+            if(result.todos[i].completed===true){
+                span.innerText="completed"
+                span.style.backgroundColor="green"
+            }
+            else{
+                span.innerText="pending"
+                span.style.backgroundColor="red"
+            }
+            
             li.textContent = text;
+            li.appendChild(span)
+            
             list.appendChild(li);
+
         }
 
     })
