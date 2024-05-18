@@ -1,4 +1,8 @@
 
+
+
+
+
 let inp = document.getElementById('inp');
 let btn =document.getElementById('btnAdd');
 let list = document.getElementById('list')
@@ -37,9 +41,11 @@ btn.addEventListener('click',()=>{
         inputbox.style.border="1px solid black"
         inputbox.focus=true;
 
-        inputbox.addEventListener('input',(event)=>{
+        // edit
+        inputbox.addEventListener('keypress',(event)=>{
             let size =event.target.value.length;
-                if(event.target.value.charAt(size-1)==="p")
+            
+                if(event.key === "Enter")
                     {
                         inputbox.value=event.target.value
                         inputbox.style.border="none";
