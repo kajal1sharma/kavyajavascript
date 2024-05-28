@@ -7,7 +7,15 @@
         constructor(para1, para2){
             this.name=para1;
             this.roll=para2;
+            
         }
+       
+
+
+    }
+
+    Account.prototype.print= function(){
+        console.log(this.name)
     }
 
 
@@ -15,10 +23,10 @@
     let obj2 = new Account("vishnu",78)
     let obj3 = new Account("priya",54)
     let obj4 = new Account("tarun",23)
-    console.log(obj1)
-    console.log(obj2)
-    console.log(obj3)
-    console.log(obj4)
+    console.log(obj1.print())
+    console.log(obj2.print())
+    console.log(obj3.print())
+    console.log(obj4.print())
 
     // let kavyaacc= {
     //     acc:89890,
